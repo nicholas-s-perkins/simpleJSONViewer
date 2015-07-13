@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/****************************************
+*             Code Styling
+*****************************************/
+.json-view{
+    font-family: "Menlo","Consolas","Inconsolata","Deja Vu Sans Mono","Droid Sans Mono","Andale Mono","Lucida Console",monospace;
+}
+
+ul, ol{
+    list-style-type:none;
+}
+
+li{
+    white-space: nowrap;
+}
+
+.propName{
+    color:purple;
+    font-weight:bold;
+}
+.Number, .Boolean,.null{
+    color:blue;
+}
+
+.String{
+    color:green;
+}
+
+/****************************************
+*             Collapse Styling
+*****************************************/
+ol > li{
+    vertical-align: top;
+}
+
+.Object:hover > .bracket, .Array:hover > .bracket{
+    background-color:skyblue;
+}
+
+li.collapse .rBracket::before {
+    content:'…';
+}
+
+li.collapse > ul > li~li,   li.collapse > ol > li~li{
+    display:none;
+}
+
+li.collapse > ul , li.collapse > ol{
+    display: inline-block;
+    padding: 0;
+
+}
+
+.Object > .propName,.Array > .propName, .bracket{
+    cursor:pointer;
+}
+
+
+
+
+
+

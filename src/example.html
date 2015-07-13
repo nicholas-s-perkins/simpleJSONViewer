@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple JSON Viewer Demo</title>
+    <link rel="stylesheet" type="text/css" href="sjViewer.css">
+</head>
+<body>
+<form>
+    <label style="display: block;" for="text">JSON</label><textarea id="text" rows="4" cols="50"></textarea>
+</form>
+<div style="margin-bottom:5px;">
+    <button id="run">Render</button>
+    <button id="runDemo">Demo</button>
+</div>
+<div>
+    <button id="collapseAll">Collapse all</button>
+    <button id="showAll">showAll</button>
+</div>
+<div id="jsonView" class="json-view"></div>
+
+
+<script src="sjViewer.js"></script>
+<script src="demoCode.js"></script>
+<script src="sjViewerHandlers.js"></script>
+</body>
+</html>
