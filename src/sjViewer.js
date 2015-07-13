@@ -66,7 +66,7 @@ var sjViewer;
                 html+= makeObject(obj);
                 break;
             default :
-                console.log(obj);alert(obj);
+                throw "Unsupported type?: " + type;
         }
 
         return html;
