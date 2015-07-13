@@ -10,7 +10,7 @@ var html = sjViewer.render('{"wat":123}');
 ```
 
 ##Style
-sjViewer.css gives a good of how to structure styles if you want to change something.  All properties are represented as an li elemment, and have a class corresponding to their type (Object, Array, Boolean, Number, String, null).  Property names are spans with the class "propName" and values are a span with the class "value".  
+sjViewer.css gives a good idea of how to structure styles if you want to change something.  All properties are represented as an `<li>` element and have a class corresponding to their type (Object, Array, Boolean, Number, String, null).  Property names are spans with the class "propName" and values are a span with the class "value".  
 
 
 ##Non-browser platforms
