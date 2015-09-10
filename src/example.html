@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <title>Simple JSON Viewer Demo</title>
     <link rel="stylesheet" type="text/css" href="sjViewer.css">
+    <style>
+        input,textarea{
+            width:100%;
+        }
+        textarea{
+            min-height:50px;
+        }
+        form{
+            width:50%
+        }
+        label{
+            display:none;
+        }
+    </style>
 </head>
 <body>
-<form>
-    <label style="display: block;" for="text">JSON</label><textarea id="text" rows="4" cols="50"></textarea>
+<form >
+    <fieldset >
+        <legend>Name</legend>
+        <label for="nameText">Name</label><input id="nameText" type="text" />
+    </fieldset>
+    <fieldset>
+        <legend>JSON</legend>
+        <label for="text">JSON Text</label><textarea id="text"></textarea>
+    </fieldset>
 </form>
 <div style="margin-bottom:5px;">
     <button id="run">Render</button>
