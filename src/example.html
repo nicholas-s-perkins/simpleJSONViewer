@@ -17,15 +17,31 @@
         label{
             display:none;
         }
+        h1{
+            margin:0;
+
+        }
+        h1 > a{
+            text-decoration: none;
+            color:black;
+        }
+        .hidden{
+            display:none;
+        }
     </style>
 </head>
 <body>
-<form >
+<h1><a href="example.html">SimpleJsonViewer</a></h1>
+<form>
     <fieldset >
         <legend>Name</legend>
         <label for="nameText">Name</label><input id="nameText" type="text" />
     </fieldset>
-    <fieldset>
+    <fieldset id="urlField">
+        <legend>URL (CORS Compatiblesada)</legend>
+        <label for="url">Via Url</label><input id="url" type="text" />
+    </fieldset>
+    <fieldset id="jsonField">
         <legend>JSON</legend>
         <label for="text">JSON Text</label><textarea id="text"></textarea>
     </fieldset>
@@ -33,10 +49,12 @@
 <div style="margin-bottom:5px;">
     <button id="run">Render</button>
     <button id="runDemo">Demo</button>
+    <button id="togglevis">Hide inputs</button>
 </div>
 <div>
     <button id="collapseAll">Collapse all</button>
     <button id="showAll">showAll</button>
+    <button id="sort">sort</button>
 </div>
 <div id="jsonView" class="json-view"></div>
 
